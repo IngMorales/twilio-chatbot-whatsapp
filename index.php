@@ -8,7 +8,7 @@ $client = new Twilio\Rest\Client($sid, $token);
 $message = $client->messages->create(
   '8881231234', // Este es el numero del agente
   array(
-    'from' => '+573103199146', // Número valido a donde enviamos el mensaje a whatsapp
+    'from' => '+17744625584', // Número valido a donde enviamos el mensaje a whatsapp
     'body' => 'Hola desde Twilio!'
   )
 );
@@ -25,7 +25,7 @@ $token  = "";
 $twilio = new Client($sid, $token); 
 
 $message = $twilio->messages 
-	->create("whatsapp:+573103199146",
+	->create("whatsapp:+17744625584",
 	  	array( 
 	  		"from" => "whatsapp:+14155238886",       
 	  		"body" => "¿Eres candidato en estas elecciones?, adquiera SIGE, el sistema de información para la gestión electoral. Más información en www.tusigeweb.com" 
@@ -34,7 +34,7 @@ $message = $twilio->messages
 print($message->sid);
 echo '<br>';
 $message = $twilio->messages 
-	->create("whatsapp:+573115515479",
+	->create("whatsapp:+17744625584",
 	  	array( 
 	  		"from" => "whatsapp:+14155238886",       
 	  		"body" => "este es un mensaje de prueba" 
@@ -46,7 +46,7 @@ echo '<br>';
 $client = new Twilio\Rest\Client($sid, $token);
 
 $message = $client->messages->create(
-  '+573103199146', // Text this number
+  '+17744625584', // Text this number
   array(
     'from' => '+17744625584', // From a valid Twilio number
     'body' => 'Hello from Twilio!'
